@@ -1,10 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/emotion-site/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>emotion</title>
+
+    <title>Emotion — evidência sobre perfil de app de namoro</title>
+    <meta
+      name="description"
+      content="224 afirmações sobre perfil, conversa e escolha de parceiro, cada uma com o nível de evidência carimbado. O que foi medido, o que a empresa alega, o que é quadro de autor e o que é folclore."
+    />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Ferramenta pessoal, não conteúdo para busca: nada aqui deve aparecer em
+         resultado de pesquisa. O repositório de origem é privado, e indexar o
+         build desfaria metade da razão de ele ser privado. -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- O tema é aplicado antes da primeira pintura para não haver piscada de
+         branco em quem usa escuro. O `next-themes` faz isso em runtime, mas só
+         depois do JS carregar — e no Pages isso demora o suficiente para ver. -->
+    <script>
+      try {
+        const salvo = localStorage.getItem('theme')
+        const escuro =
+          salvo === 'dark' ||
+          ((!salvo || salvo === 'system') &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (escuro) document.documentElement.classList.add('dark')
+      } catch {}
+    </script>
     <script type="module" crossorigin src="/emotion-site/assets/index-B-O1LV5b.js"></script>
     <link rel="stylesheet" crossorigin href="/emotion-site/assets/index-Z_RJ_h3u.css">
   </head>
