@@ -1,0 +1,1 @@
+import{at as e,ot as t,r as n,rt as r}from"./CompositeRoot-BIFvf0ZI.js";function i(i){let{render:a,className:o,style:s,state:c=t,props:l=e,refs:u=e,metadata:d,stateAttributesMapping:f,tag:p=`div`,...m}=i,{compositeProps:h,compositeRef:g}=n({metadata:d});return r(p,i,{state:c,ref:[g,...u],props:[h,...l,m],stateAttributesMapping:f})}export{i as t};
